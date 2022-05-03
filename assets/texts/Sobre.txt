@@ -1,0 +1,5 @@
+Através de anos jogando D&D e passando pela dificuldade de administração de fichas de personagem impressas, seja para controle de espaços de magias, uso de itens consumíveis ou uso restantes de carecterísticas do seu personagem, o PimpMyCharacter é o programa que vai servir para a gerência de seu personagem e todas as informações da campanha que você deseja lembrar. Este aplicativo será o substituto da sua ficha de RPG, e terá todas as ferramentas necessárias para que você participe de uma campanha, desde o rolador de dados para a ficha de seu personagem para rápido acesso a ataques e atributos e até mesmo uma área exclusiva para anotações.
+
+Criado por: João Pedro Castilhano Brigliadori e Pedro Peng Martins Wang
+Avaliação parcial de Novas Tecnologias de Informação e Comunicação. 
+UNAERP 2022
