@@ -1,3 +1,5 @@
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
 import 'package:dnd/view/tela_anotacoes.dart';
 import 'package:dnd/view/tela_cadastro.dart';
 import 'package:dnd/view/tela_login.dart';
@@ -9,7 +11,12 @@ import 'package:dnd/view/tela_rolador.dart';
 import 'package:dnd/view/tela_sobre.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+Future<void> main() async {
+
+  await Firebase.initializeApp(
+      options: DefaultFirebaseOptions.currentPlatform,
+  );
+
   runApp(
     MaterialApp(
       debugShowCheckedModeBanner: false,
