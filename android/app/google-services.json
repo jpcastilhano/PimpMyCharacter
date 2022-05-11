@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "792531175929",
+    "project_id": "pmc-nt",
+    "storage_bucket": "pmc-nt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792531175929:android:e3dfbac421c80dd1afd528",
+        "android_client_info": {
+          "package_name": "com.example.dnd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792531175929-e302oq98i1179dejoka917frcfnvveto.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9f8U0ZZpjLjfIp24LtwTcVbAgCST3IAI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792531175929-e302oq98i1179dejoka917frcfnvveto.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
