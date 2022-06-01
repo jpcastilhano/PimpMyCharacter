@@ -1,5 +1,6 @@
+import 'package:dnd/view/tela_personagemDetalhes.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'firebase/firebase_options.dart';
 import 'package:dnd/view/tela_anotacoes.dart';
 import 'package:dnd/view/tela_cadastro.dart';
 import 'package:dnd/view/tela_login.dart';
@@ -30,9 +31,8 @@ Future<void> main() async {
         't5': (context) => const TelaRolador(), //Rolador de Dados
         't6': (context) => const TelaAnotacoes(),
         't7': (context) => const TelaSobre(),
-        't8': (context) =>
-            const TelaPersonagemCadastro(), //Cadastro de personagem
-        //'t9': (context) => const TelaPersonagemDetalhes(), //Detalhes do personagem
+        't8': (context) => const TelaPersonagemCadastro(), //Cadastro de personagem
+        't9': (context) => const TelaPersonagemDetalhes(), //Detalhes do personagem
         't10': (context) => const TelaPocoes(),
       },
     ),

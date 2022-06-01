@@ -26,7 +26,7 @@ class _TelaLoginState extends State<TelaLogin> {
       backgroundColor: Colors.red.shade200,
       body: SingleChildScrollView(
         child: Padding(
-          padding: EdgeInsets.all(30),
+          padding: const EdgeInsets.all(30),
           child: Center(
             //Formulário
             child: Form(
