@@ -33,3 +33,14 @@ TextStyle estiloDetalhes(){
     color: Colors.black,
   );
 }
+
+BoxDecoration boxDecorationDetalhes(){
+  return BoxDecoration(
+    border: Border.all(
+      color: Colors.red.shade600,
+      width: 3,
+    ),
+    borderRadius: BorderRadius.circular(20),
+    color: Colors.grey.shade600,
+  );
+}
