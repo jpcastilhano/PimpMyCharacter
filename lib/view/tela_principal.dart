@@ -1,3 +1,5 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class TelaPrincipal extends StatefulWidget {
@@ -8,6 +10,33 @@ class TelaPrincipal extends StatefulWidget {
 }
 
 class _TelaPrincipalState extends State<TelaPrincipal> {
+
+  var personagens;
+  var nomeUsuario;
+
+  @override
+  void initState() {
+    super.initState();
+    //Recuperar os dados da coleção de caffes
+    personagens = FirebaseFirestore.instance.collection('cafes').where('uid',
+        isEqualTo: FirebaseAuth.instance.currentUser!.uid.toString());
+  }
+
+  retornarNomeUsuario() async {
+    var uid = FirebaseAuth.instance.currentUser!.uid.toString();
+    await FirebaseFirestore.instance
+        .collection('usuarios')
+        .where('uid', isEqualTo: uid)
+        .get()
+        .then((q) {
+      if (q.docs.isNotEmpty) {
+        nomeUsuario = q.docs[0].data()['nome'];
+      } else {
+        nomeUsuario = 'NENHUM';
+      }
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

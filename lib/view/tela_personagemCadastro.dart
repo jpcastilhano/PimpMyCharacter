@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class TelaPersonagemCadastro extends StatefulWidget {
@@ -12,6 +13,7 @@ class _TelaPersonagemCadastroState extends State<TelaPersonagemCadastro> {
   var txtNome = TextEditingController();
   var txtClasse = TextEditingController();
   var txtRaca = TextEditingController();
+  var txtNivel = TextEditingController();
 
   var txtHp = TextEditingController();
   var txtCa = TextEditingController();
@@ -257,6 +259,32 @@ class _TelaPersonagemCadastroState extends State<TelaPersonagemCadastro> {
         filled: true,
         //Tirar a parte do hinttext de cima do field
         floatingLabelBehavior: FloatingLabelBehavior.never,
+      ),
+    );
+  }
+
+  botao(rotulo, dir) {
+    return SizedBox(
+      width: 150,
+      height: 80,
+      //Tipos de botões
+      //  ElevatedButton
+      //  TextButton
+      //  OutlinedButton
+      child: ElevatedButton(
+        //comportamento
+        onPressed: () {
+          Navigator.pushNamed(context, dir);
+        },
+        //aparência
+        child: Text(
+          rotulo,
+          style: const TextStyle(
+              fontSize: 24, fontFamily: 'Raleway', fontWeight: FontWeight.w300),
+        ),
+        style: ElevatedButton.styleFrom(
+          primary: Colors.red.shade500,
+        ),
       ),
     );
   }
